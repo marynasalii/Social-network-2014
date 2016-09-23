@@ -1,0 +1,285 @@
+@font-face {
+  font-family: Titillium Regular;
+  src: url(fonts/Titillium-Regular.otf);
+}
+
+/* line 11, style.scss */
+html:not(#sign_up_form, #log_in_form) {
+  background: #565d67;
+}
+
+@-webkit-keyframes pulse {
+  /* line 17, style.scss */
+  0% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+
+  /* line 20, style.scss */
+  50% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+  }
+
+  /* line 24, style.scss */
+  100% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+}
+
+/* line 29, style.scss */
+.container {
+  width: 100%;
+}
+/* line 33, style.scss */
+.container #main {
+  position: absolute;
+  width: 80%;
+  margin: 0px auto;
+  height: 600px;
+  z-index: 7;
+  top: 0px;
+  left: 50%;
+  margin-left: -40%;
+}
+/* line 45, style.scss */
+.container #forms {
+  width: 30%;
+  margin-top: 40px;
+}
+/* line 50, style.scss */
+.container #welcome {
+  width: 70%;
+  float: right;
+  margin-top: -400px;
+}
+/* line 56, style.scss */
+.container h2, .container h1 {
+  font-family: Titillium Regular;
+  font-size: 2em;
+  font-weight: bold;
+  color: #edeeee;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 71, style.scss */
+.container h1 {
+  font-size: 3em;
+}
+/* line 74, style.scss */
+.container h3 {
+  font-size: 1.5em;
+  color: #edeeee;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+/* line 80, style.scss */
+.container fieldset {
+  border: none;
+  padding: 0px;
+  margin: 0px auto;
+  width: 75%;
+  font-family: Titillium Regular;
+}
+/* line 88, style.scss */
+.container fieldset label {
+  color: #565d67;
+  display: block;
+  line-height: 1.4;
+  opacity: .6;
+  text-shadow: 0 1px 1px #fff;
+}
+/* line 95, style.scss */
+.container fieldset input[type="text"], .container fieldset input[type="password"], .container fieldset input[type="email"], .container fieldset input[type="date"] {
+  width: 96%;
+  padding-left: 4.6%;
+  color: #666;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-image: -webkit-gradient(linear, 0%, 0%, 0% 12%, from(#999999), to(white));
+  background-image: -moz-linear-gradient(0% 12% 90deg, white, #999999);
+  background-color: #fff;
+}
+/* line 110, style.scss */
+.container fieldset input:focus {
+  -webkit-animation: pulse 1.5s infinite ease-in-out;
+}
+/* line 113, style.scss */
+.container fieldset input[type="submit"] {
+  margin-top: 10px;
+  padding: 8px 15px;
+  line-height: 1;
+  color: #444;
+  border: none;
+  background-image: -webkit-gradient(linear, 0%, 0%, 0% 100%, from(white), to(#bbbbbb));
+  background-image: -moz-linear-gradient(0% 100% 90deg, #bbbbbb, white);
+  background-color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* line 131, style.scss */
+.container fieldset input[type="submit"]:focus {
+  -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(51, 204, 255, 0.5);
+  box-shadow: 0 1px 2px rgba(51, 204, 255, 0.5);
+}
+/* line 137, style.scss */
+.container #log_in_form {
+  float: left;
+  background: #cdcdcd;
+  z-index: 6;
+  opacity: .95;
+  border-radius: 6px;
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+/* line 148, style.scss */
+.container #log_in_form input {
+  margin-top: 7px;
+}
+/* line 152, style.scss */
+.container #sign_up_form {
+  float: left;
+  height: 400px;
+  width: 100%;
+  background: #cdcdcd;
+  z-index: 6;
+  opacity: .95;
+  border-radius: 6px;
+}
+/* line 163, style.scss */
+.container #sidebar {
+  width: 19.14%;
+  height: 700px;
+  background: #565d67;
+  position: absolute;
+  left: 0px;
+}
+/* line 171, style.scss */
+.container #sidebar nav {
+  margin-top: 100px;
+  height: 360px;
+}
+/* line 175, style.scss */
+.container #sidebar nav hr {
+  width: 49%;
+  color: #edeeee;
+  margin: 0px auto;
+}
+/* line 181, style.scss */
+.container #sidebar nav input[type="submit"] {
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  background: #565d67;
+  color: #edeeee;
+  border: none;
+  font-family: Titillium Regular;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 199, style.scss */
+.container #sidebar nav input[type="submit"]:hover {
+  background: #ea6060;
+}
+/* line 203, style.scss */
+.container #sidebar nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+/* line 206, style.scss */
+.container #sidebar nav ul li {
+  list-style: none;
+  height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 213, style.scss */
+.container #sidebar nav ul li a {
+  display: block;
+  line-height: 60px;
+  color: #edeeee;
+  text-decoration: none;
+  font-family: Titillium Regular;
+  font-size: 1em;
+}
+/* line 223, style.scss */
+.container #sidebar nav ul li a:hover {
+  background: #ea6060;
+}
+
+/* line 232, style.scss */
+#wrapper {
+  width: 80.86%;
+  height: 700px;
+  position: absolute;
+  right: 0px;
+  background: #cdcdcd;
+}
+/* line 239, style.scss */
+#wrapper input[type="submit"] {
+  text-transform: uppercase;
+}
+/* line 242, style.scss */
+#wrapper #title {
+  font-size: 1.3em;
+  font-family: Titillium Regular;
+  font-weight: bold;
+  color: #000;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+/* line 252, style.scss */
+#wrapper #myinfo {
+  margin-top: -300px;
+  font-family: Titillium Regular;
+  font-size: 1em;
+  font-weight: normal;
+  color: black;
+  height: 500px;
+  width: 200px;
+  margin-left: 600px;
+}
+/* line 259, style.scss */
+#wrapper #avatar {
+  height: 300px;
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+/* line 265, style.scss */
+#wrapper #avatar img {
+  height: 300px;
+  width: 300px;
+}
+/* line 269, style.scss */
+#wrapper .sendform textarea {
+  width: 300px;
+  height: 50px;
+}
+/* line 273, style.scss */
+#wrapper .submitbutton {
+  height: 54px;
+  width: 160px;
+  background: #fff;
+  color: #000;
+  border: 2px solid black;
+}
+/* line 279, style.scss */
+#wrapper .submitbutton:hover {
+  background: #ea6060;
+  border: none;
+  color: #fff;
+}
