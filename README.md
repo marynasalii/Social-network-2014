@@ -1,1 +1,1 @@
-# social-network-2014
+Final project made for Center of Information Technologies, Kyiv
